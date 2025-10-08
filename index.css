@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #424242;
+  margin: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10mm;
+}
+
+.a4-page {
+  background-color: #fff;
+  width: 210mm;
+  height: 297mm;
+  display: flex;
+  gap: 10mm;
+}
+
+.sidebar {
+  background-color: #3c3c3c;
+  color: #bbb;
+  height: 100%;
+  width: 30%;
+  padding: 7.5mm;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+}
+
+.contact-me {
+  background-color: #b4906c;
+  color: #3c3c3c;
+  font-weight: bold;
+  padding: 5mm;
+  width: 60mm;display: flex;
+  flex-direction: column;
+  gap: 3mm;
+  position: relative;
+}
+
+.contact-me::after {
+  content: "";
+  width: 17px;
+  height: 12px;
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  background: linear-gradient(146deg, rgba(143, 116, 87, 1) 0%, rgba(143, 116, 87, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);;
+}
+
+.contact-me > h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.contact-me > hr {
+  color: #3c3c3c;
+  margin: 0;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2mm;
+  place-items: center;
+}
+
+.contact-info > .svg-container {
+  width: 25px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75em;
+}
+
+.contact-details > h3, .contact-details > a {
+  margin: 0;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+.sidebar-section > h2 {
+  color: #b4906c;
+  margin: 0px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.education-details {
+  color: #bbb;
+}
+
+.education-details > h3, .education-details > p {
+  margin: 1px;
+}
+
+.education-details > h3 {
+  font-size: 1em;
+}
+
+.education-details > p {
+  font-size: 0.75em;
+}
+
+.languages > p {
+  margin: 2px;
+}
+
+.skill-section > ul > li {
+  margin: 2px;
+}
+
+.content{
+  padding-top: 30px;
+  color: #616161;
+  width: 60%;
+}
+
+.content-section > h2 {
+  position: relative;
+  color: #b4906c;
+  margin: 10px 0px;
+}
+
+.content-section > h2::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #b4906c;
+}
+
+.content p {
+  font-size: 0.8em;
+}
+
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.experience-details > h3 {
+  margin: 3px;
+}
+
+.experience-details > p {
+  margin: 1px;
+}
+
+@media print {
+  .content-wrapper {
+    padding: 0;
+  }
+}
